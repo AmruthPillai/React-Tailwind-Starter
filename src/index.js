@@ -9,16 +9,14 @@ import {
 import './tailwind/tailwind.css';
 import './index.css';
 
-import HomePage from './pages/Home/Home';
 import * as serviceWorker from './serviceWorker';
+import HomePage from './pages/Home/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="/">
-          <HomePage />
-        </Route>
+        <Route exact path="/" component={HomePage} />
       </Switch>
     </Router>
   </React.StrictMode>,
