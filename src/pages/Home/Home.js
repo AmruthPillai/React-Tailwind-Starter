@@ -1,15 +1,16 @@
 import React from 'react';
+import Card from '../../components/Card';
 
-function App() {
+const HomePage = () => {
   return (
     <div className="container mx-auto">
-      <div className="shadow my-12 py-12 flex justify-center items-center">
+      <Card>
         <h1 className="text-xl font-medium">
           Thank you for using the React Tailwind Starter project!
         </h1>
-      </div>
+      </Card>
     </div>
   );
-}
+};
 
-export default App;
+export default HomePage;
