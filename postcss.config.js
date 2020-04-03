@@ -1,3 +1,6 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
+
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./public/**/*.html'],
   defaultExtractor: (content) =>

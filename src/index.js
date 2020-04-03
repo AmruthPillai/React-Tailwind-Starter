@@ -1,24 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
 
 import './tailwind/tailwind.css';
 import './index.css';
 
 import * as serviceWorker from './serviceWorker';
-import HomePage from './pages/Home/Home';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-      </Switch>
-    </Router>
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
